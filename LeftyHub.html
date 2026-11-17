@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeftyHub</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Arial', sans-serif; background-color: #f8f9fa; }
+        .hero-left { padding: 80px 40px; background-color: #f0f0f0; }
+        .hero-right { background-color: #555; color: white; display: flex; align-items: center; justify-content: center; position: relative; }
+        .hero-right img { max-width: 80%; height: auto; z-index: 1; transform: rotate(-15deg); }
+        .star-rating { color: #ffc107; font-size: 0.8rem; }
+        .product-img-box { height: 200px; display: flex; align-items: center; justify-content: center; background-color: #e9ecef; overflow: hidden; margin-bottom: 15px;}
+        .product-img-box img { max-width: 100%; max-height: 100%; object-fit: cover; }
+        .newsletter-box { background-color: #000; color: white; border-radius: 15px; padding: 30px; margin: 40px 0; }
+        .footer-links h6 { font-weight: bold; margin-bottom: 15px; font-size: 0.9rem; letter-spacing: 1px; }
+        .footer-links ul { list-style: none; padding: 0; }
+        .footer-links li { margin-bottom: 8px; font-size: 0.85rem; color: #6c757d; }
+        /* Add a dummy link style for prototype purposes */
+        a.dummy-link { text-decoration: none; color: inherit; }
+    </style>
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-dark text-white text-center py-1" style="font-size: 0.8rem;">
+        Sign up and get 20% off to your first order. <a href="#" class="text-white text-decoration-underline">Sign Up Now</a>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 border-bottom">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#">LeftyHub</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
+                    <li class="nav-item"><a class="nav-link" href="#">Shop <i class="fas fa-chevron-down ms-1" style="font-size: 0.7rem;"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">On Sale</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">New Arrivals</a></li>
+                </ul>
+                <form class="d-flex position-relative w-25">
+                    <i class="fas fa-search position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"></i>
+                    <input class="form-control rounded-pill ps-5 bg-light border-0" type="search" placeholder="Search for products...">
+                </form>
+                <div class="ms-4">
+                    <a href="#" class="text-dark me-3"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="#" class="text-dark"><i class="far fa-user-circle"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Split Design) -->
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <!-- Left Side Text -->
+            <div class="col-md-6 hero-left d-flex flex-column justify-content-center align-items-start px-5">
+                <h1 class="display-4 fw-bolder mb-3" style="font-family: 'Times New Roman', serif;">Premium Gears For<br>Left Handers</h1>
+                <p class="text-muted mb-4" style="max-width: 400px; font-size: 0.9rem;">Browse through our diverse range of meticulously crafted tools, designed to bring out your individuality.</p>
+                <a href="#new-arrivals" class="btn btn-dark rounded-pill px-5 py-2 mb-5">Shop Now</a>
+                
+                <div class="d-flex w-100 mt-4">
+                    <div class="me-4 border-end pe-4">
+                        <h3 class="fw-bold mb-0">20+</h3>
+                        <small class="text-muted">Essentials</small>
+                    </div>
+                    <div class="me-4 border-end pe-4">
+                        <h3 class="fw-bold mb-0">200+</h3>
+                        <small class="text-muted">Surveys</small>
+                    </div>
+                    <div>
+                        <h3 class="fw-bold mb-0">20,000+</h3>
+                        <small class="text-muted">Happy Customers</small>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Side Image/Dark Area -->
+            <div class="col-md-6 hero-right overflow-hidden">
+                <div class="position-absolute top-0 start-0 w-100 p-4">
+                    <h2 class="text-white" style="font-family: 'Times New Roman', serif; font-style: italic;">Are Left-Handed Scissors A Thing?<br>Why Does It Make A Difference?</h2>
+                </div>
+                <!-- IMPORTANT: Replace this src with your actual scissors image URL or local file path -->
+                <img src="https://via.placeholder.com/400x400/555555/ffffff?text=Add+Scissors+Image+Here" alt="Left Handed Scissors" class="mt-5">
+            </div>
+        </div>
+    </div>
+
+    <!-- Black Banner -->
+    <div class="bg-black text-white py-3">
+        <div class="container">
+            <h5 class="mb-0 letter-spacing-2" style="font-family: 'Times New Roman', serif; letter-spacing: 2px;">NATURALLY LEFTY</h5>
+        </div>
+    </div>
+
+    <!-- New Arrivals Section -->
+    <section id="new-arrivals" class="py-5 bg-white">
+        <div class="container text-center">
+            <h2 class="fw-bolder mb-5" style="font-family: 'Times New Roman', serif;">NEW ARRIVALS</h2>
+            
+            <div class="row g-4 text-start">
+                
+                <!-- Product 1: Scissors (LINKED TO PRODUCT PAGE) -->
+                <div class="col-md-3">
+                    <a href="product.html" class="dummy-link">
+                        <div class="product-img-box rounded">
+                            <img src="https://via.placeholder.com/250x200/ffcccc/000000?text=Scissor+Img" alt="Left handed scissor">
+                        </div>
+                        <h6 class="fw-bold mt-3 mb-1">Left handed scissor</h6>
+                        <div class="star-rating mb-1">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span class="text-dark fw-bold ms-1" style="font-size: 0.8rem;">4.5/5</span>
+                        </div>
+                        <p class="fw-bold fs-5 mb-0">100 Rs.</p>
+                    </a>
+                </div>
+
+                <!-- Product 2: Shirt -->
+                <div class="col-md-3">
+                    <div class="product-img-box rounded">
+                         <img src="https://via.placeholder.com/250x200/ccddff/000000?text=Shirt+Img" alt="Shirt">
+                    </div>
+                    <h6 class="fw-bold mt-3 mb-1">Product 2</h6>
+                    <div class="star-rating mb-1">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> <span class="text-dark fw-bold ms-1" style="font-size: 0.8rem;">3.5/5</span>
+                    </div>
+                    <p class="fw-bold fs-5 mb-0">350 Rs.</p>
+                </div>
+
+                <!-- Product 3: Ruler -->
+                <div class="col-md-3">
+                    <div class="product-img-box rounded">
+                         <img src="https://via.placeholder.com/250x200/eeddcc/000000?text=Ruler+Img" alt="Ruler">
+                    </div>
+                    <h6 class="fw-bold mt-3 mb-1">Left handed ruler</h6>
+                    <div class="star-rating mb-1">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span class="text-dark fw-bold ms-1" style="font-size: 0.8rem;">5.0/5</span>
+                    </div>
+                    <p class="fw-bold fs-5 mb-0">20 Rs.</p>
+                </div>
+
+                <!-- Product 4: Pen -->
+                <div class="col-md-3">
+                    <div class="product-img-box rounded">
+                         <img src="https://via.placeholder.com/250x200/ddffcc/000000?text=Pen+Img" alt="Smudge Proof Pen">
+                    </div>
+                    <h6 class="fw-bold mt-3 mb-1">SMUDGE PROOF PEN</h6>
+                    <div class="star-rating mb-1">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span class="text-dark fw-bold ms-1" style="font-size: 0.8rem;">4.5/5</span>
+                    </div>
+                    <p class="fw-bold fs-5 mb-0">150 Rs.</p>
+                </div>
+
+            </div>
+            
+            <button class="btn btn-outline-dark rounded-pill px-5 py-2 mt-5">View All</button>
+        </div>
+    </section>
+
+    <!-- Footer Area -->
+    <div class="container bg-white pb-5">
+        <!-- Newsletter Box -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="newsletter-box d-flex justify-content-between align-items-center flex-wrap">
+                    <h2 class="fw-bolder mb-0" style="font-family: 'Times New Roman', serif;">STAY UPTO DATE ABOUT OUR<br>LATEST OFFERS</h2>
+                    <div class="d-flex flex-column" style="width: 350px;">
+                        <div class="position-relative mb-2">
+                            <i class="far fa-envelope position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"></i>
+                            <input type="email" class="form-control rounded-pill ps-5 py-2" placeholder="Enter your email address">
+                        </div>
+                        <button class="btn btn-light rounded-pill py-2 fw-bold w-100">Subscribe to Newsletter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="row footer-links mt-5 pt-3">
+            <div class="col-md-4 pe-5">
+                <h4 class="fw-bold mb-3 fs-3">LeftyHub</h4>
+                <p class="text-muted" style="font-size: 0.85rem;">We have essential that suits your style and which you're comfortable to use.</p>
+                <div class="mt-4">
+                    <a href="#" class="text-dark me-2 bg-light rounded-circle p-2 border d-inline-flex justify-content-center align-items-center" style="width:35px; height:35px;"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-2 bg-dark rounded-circle p-2 d-inline-flex justify-content-center align-items-center" style="width:35px; height:35px;"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-dark me-2 bg-light rounded-circle p-2 border d-inline-flex justify-content-center align-items-center" style="width:35px; height:35px;"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-dark bg-light rounded-circle p-2 border d-inline-flex justify-content-center align-items-center" style="width:35px; height:35px;"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            
+            <div class="col-md-2">
+                <h6>COMPANY</h6>
+                <ul>
+                    <li>About</li>
+                    <li>Features</li>
+                    <li>Works</li>
+                    <li>Career</li>
+                </ul>
+            </div>
+            
+            <div class="col-md-2">
+                <h6>HELP</h6>
+                <ul>
+                    <li>Customer Support</li>
+                    <li>Delivery Details</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            
+            <div class="col-md-2">
+                <h6>FAQ</h6>
+                <ul>
+                    <li>Account</li>
+                    <li>Manage Deliveries</li>
+                    <li>Orders</li>
+                    <li>Payments</li>
+                </ul>
+            </div>
+            
+            <div class="col-md-2">
+                <h6>RESOURCES</h6>
+                <ul>
+                    <li>Free eBooks</li>
+                    <li>Development Tutorial</li>
+                    <li>How to - Blog</li>
+                    <li>Youtube Playlist</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Copyright Bottom -->
+        <div class="row mt-5 border-top pt-4">
+            <div class="col-md-6 text-muted" style="font-size: 0.85rem;">
+                LeftyHub © 2000-2026, All Rights Reserved
+            </div>
+            <div class="col-md-6 text-end">
+                <i class="fab fa-cc-visa fa-2x text-muted me-2"></i>
+                <i class="fab fa-cc-mastercard fa-2x text-muted me-2"></i>
+                <i class="fab fa-cc-paypal fa-2x text-muted me-2"></i>
+                <i class="fab fa-cc-apple-pay fa-2x text-muted me-2"></i>
+                <i class="fab fa-google-pay fa-2x text-muted"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
